@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import mean_absolute_error,mean_squared_error,r2_score
 from sklearn.linear_model import LinearRegression
 
-data=pd.read_csv("Student_Performance.csv")
+data=pd.read_csv("data/Student_Performance.csv")
 model=LinearRegression()
 
 x=data[['study_hours']]

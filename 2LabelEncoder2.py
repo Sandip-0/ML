@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder 
 import numpy as np
 
-df=pd.read_csv("data.csv")
+df=pd.read_csv("data/data.csv")
 le=LabelEncoder()
 df_label=df.copy()
 # df_label['gender_e']=le.fit_transform(df_label["gender"])

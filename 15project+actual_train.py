@@ -6,7 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import mean_squared_error,mean_absolute_error,r2_score
 import matplotlib.pyplot as plt
 
-data = pd.read_csv("suicide.csv")
+data = pd.read_csv("data/suicide.csv")
 
 le = LabelEncoder()
 model = RandomForestRegressor(n_estimators=100)
@@ -60,7 +60,7 @@ plt.title("Prediction Error Plot")
 
 # plt.show()
 
-plot_data = pd.read_csv("suicide.csv")
+plot_data = pd.read_csv("data/suicide.csv")
 pivot = plot_data.pivot_table(values='suicide_rate', index='year', columns='country')
 pivot.plot(figsize=(12,6))
 # plt.figure(figsize=(10,6))

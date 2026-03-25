@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import LabelEncoder,OneHotEncoder
 from sklearn.metrics import mean_squared_error,mean_absolute_error,r2_score
 
-data=pd.read_csv('suicide.csv')
+data=pd.read_csv('data/suicide.csv')
 
 model=LinearRegression()
 le=LabelEncoder()

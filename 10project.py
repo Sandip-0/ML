@@ -3,7 +3,7 @@ from sklearn.linear_model import LinearRegression
 import numpy as np
 import pandas as pd
 
-data=pd.read_csv("student.csv")
+data=pd.read_csv("data/student.csv")
 x=data[['Hours']] # it should 2d
 y=data['Score']
 
